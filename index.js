@@ -6,10 +6,11 @@ const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
-require('dotenv').config();
+
 
 app.use(express.json());
 app.use(cors());
+require('dotenv').config();
 
 // Database Connection with MongoDb 
 const mongoURI = process.env.MONGO_URI;
